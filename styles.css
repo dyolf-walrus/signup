@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(241, 250, 230);
+    display: flex;
+}
+
+.left {
+    background-image: url(images/leafbackground.avif);
+    width: 40vw;
+    height: 100vh;
+    background-size: 100% auto;
+}
+
+.logodiv {
+    padding: 10px;
+    position: relative;
+    top: 25%;
+    width: auto;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.logocontainer {
+    margin: auto;
+    display: flex;
+    color: white;
+    font-size: 75px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poiret One', sans-serif;
+    gap: 10px;
+}
+
+img {
+    width: 15%;
+}
+
+.right {
+    font-size: 16px;
+    font-family: sans-serif;
+    width: 60vw;
+}
+
+.one {
+    height: 37%;
+    padding: 25px;
+    padding-right: 25%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.one > p {
+    padding-bottom: 20px;
+}
+
+.two {
+    background-color: white;
+    height: 30%;
+}
+
+.formfields {
+    display: flex;
+    justify-content: space-evenly;
+    height: 37%;
+    padding: 25px;
+    padding-right: 25%;
+}
+
+.formleft {
+    display: flex;
+    flex-direction: column;
+}
+
+.formright {
+    display: flex;
+    flex-direction: column;
+}
