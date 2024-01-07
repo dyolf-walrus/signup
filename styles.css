@@ -5,16 +5,23 @@
     margin: 0;
 }
 
+html {
+    display: inline-block;
+    height: 100%;
+}
+
 body {
     background-color: rgb(241, 250, 230);
     display: flex;
+    align-items: stretch;
+    height: 100%;
 }
 
 .left {
     background-image: url(images/leafbackground.avif);
-    width: 40vw;
-    height: 100vh;
     background-size: 100% auto;
+    flex: 0 0 40%;
+    height: 100%;
 }
 
 .logodiv {
@@ -43,12 +50,12 @@ img {
 .right {
     font-size: 16px;
     font-family: sans-serif;
-    width: 60vw;
+    flex: 0 0 60%;
 }
 
 .one {
     height: 37%;
-    padding: 25px;
+    padding: 30px;
     padding-right: 25%;
     font-weight: bold;
     display: flex;
@@ -63,14 +70,25 @@ img {
 .two {
     background-color: white;
     height: 30%;
+    box-shadow: 1px 2px 3px rgb(185, 192, 176);
+    padding: 15px 35px;
+    font-size: 18px;
 }
 
 .formfields {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    gap: 75px;
     height: 37%;
-    padding: 25px;
-    padding-right: 25%;
+}
+
+.three {
+    padding: 15px 35px;
+    font-size: 15px;
+}
+
+.three > p {
+    margin-top: 20px;
 }
 
 .formleft {
@@ -81,4 +99,58 @@ img {
 .formright {
     display: flex;
     flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #272e20;
+    font-size: 14px;
+}
+
+input {
+    border-color: #596D48;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 3px;
+    outline: none;
+}
+
+input:invalid {
+    border-color: rgb(179, 3, 3);
+    background-color: rgb(250, 209, 209);
+}
+
+.error {
+    border-color: rgb(179, 3, 3);
+    background-color: rgb(250, 209, 209);
+}
+
+input:focus {
+    border-color: rgb(154, 194, 103);
+    box-shadow: 1px 2px 3px rgb(185, 192, 176);
+}
+
+#confirmpassword {
+    margin-bottom: 0px;
+}
+
+button {
+    height: 40px;
+    width: 150px;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    background-color: #596D48;
+    box-shadow: 1px 2px 3px rgb(185, 192, 176);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+a {
+    color: #596D48;
+}
+
+a:hover {
+    color: #97b87a;
 }

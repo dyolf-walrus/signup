@@ -39,17 +39,19 @@
                         <input type="text" id="lastname">
 
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone">
+                        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
 
-                        <label for="confirmpassword">Email</label>
+                        <label for="confirmpassword">Confirm Password</label>
                         <input type="password" id="confirmpassword">
                     </div>
                 </div>
             </div>
             <div class="three">
-                <button>Submit</button>
+                <button>Create Account</button>
+                <p>Already have an account? <a href="index.html">Sign In</a></p>
             </div>
             </form>
         </div>
+        <script src="scripts.js"></script>
     </body>
 </html>
